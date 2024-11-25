@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* App Container */
+  .app {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+   
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 26px;
+    color: #212529;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  /* Input Container */
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  
+  textarea {
+    flex: 1;
+    max-width: 800px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #007bff;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button.cancel {
+    background-color: #6c757d;
+  }
+  
+  button.cancel:hover {
+    background-color: #495057;
+  }
+  
+  /* Task List */
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #f9fafb;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+  }
+  
+  .todo-list li:hover {
+    background-color: #f1f5f9;
+    border-color: #007bff;
+  }
+  
+  .todo-list li span {
+    flex: 1;
+    font-size: 16px;
+    color: #343a40;
+    word-wrap: break-word;
+    cursor: pointer;
+  }
+  
+  .todo-list li.completed span {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  /* Buttons Inside Task Items */
+  .todo-list div {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .todo-list button {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .todo-list button:hover {
+    background-color: #b02a37;
+  }
+  
+  .todo-list .edit-btn {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .todo-list .edit-btn:hover {
+    background-color: #d39e00;
+  }
+  
+  .todo-list .done-btn {
+    background-color: #28a745;
+  }
+  
+  .todo-list .done-btn:hover {
+    background-color: #218838;
+  }
+  /* Edit Container */
+.edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-container textarea {
+    flex: 1;
+    max-width: 350px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .edit-container textarea:focus {
+    border-color: #007bff;
+  }
+  
+  .edit-container button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-container button.update {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .edit-container button.update:hover {
+    background-color: #218838;
+  }
+  
+  .edit-container button.cancel {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .edit-container button.cancel:hover {
+    background-color: #b02a37;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .input-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    textarea {
+      width: 100%;
+    }
+  
+    .todo-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  
+    .todo-list div {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  }
+  
